@@ -1,11 +1,11 @@
 @font-face {
 	font-family: CaviarDreams;
-	src: url(CaviarDreams.ttf);
+	src: url(fonts/CaviarDreams.ttf);
 }
 
 @font-face {
 	font-family: CaviarBold;
-	src: url(CaviarDreams_Bold.ttf);
+	src: url(fonts/CaviarDreams_Bold.ttf);
 }
 
 body {
