@@ -19,46 +19,6 @@ body {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 1000px) {
-	.wrapper { width: 95%; }
-}
-
-@media screen and (max-width: 583px) {
-	.navbar .wrapper {
-		width: 100%;
-		text-align: center;
-	}
-
-	.navbar {
-		height: 100px;
-	}
-
-	header nav {
-		background-color: #308fff;
-		float: none;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	header a {
-		width: auto;
-		font-size: 20px;
-		padding: 10px 0;
-		margin: 0;
-	}
-
-	#logo {
-		height: 120px;
-		float: none;
-		margin: 10px auto;
-	}
-
-	#mobilebar {
-		height: 65px;
-		background-color: #643485;
-	}
-}
-
 /* NAV BAR */
 
 .navbar {
@@ -99,6 +59,46 @@ header a:hover {
 	height: 150px;
 	margin: 10px 0;
 	float: left;
+}
+
+@media screen and (max-width: 1000px) {
+	.wrapper { width: 95%; }
+}
+
+@media screen and (max-width: 583px) {
+	.navbar .wrapper {
+		width: 100%;
+		text-align: center;
+	}
+
+	.navbar {
+		height: 100px;
+	}
+
+	header nav {
+		background-color: #308fff;
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	header a {
+		width: auto;
+		font-size: 20px;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	#logo {
+		height: 120px;
+		float: none;
+		margin: 10px auto;
+	}
+
+	#mobilebar {
+		height: 65px;
+		background-color: #643485;
+	}
 }
 
 /* PORTFOLIO */
