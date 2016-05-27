@@ -1,0 +1,64 @@
+.desc {
+	width: 20%;
+	position: fixed;
+	margin-top: 70px;
+}
+
+.desc h1, 
+.desc p {
+	color: #f0f0f0;
+}
+
+.desc h1 {
+	font-family: CaviarBold, GillSans, sans-serif;
+}
+
+.desc p {
+	font-family: GillSans, sans-serif;
+}
+
+.desc a {
+	font-family: GillSans, sans-serif;
+	font-size: 18px;
+	color: #308fff;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+
+.desc a:hover {
+	color: #f0f0f0;
+	border-bottom: 2px solid #f0f0f0;
+}
+
+.images {
+	width: 65%;
+	padding-left: 20px;
+	margin-top: 70px;
+	float: right;
+}
+
+.wide-1 {
+	width: 48%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	float: left;
+}
+
+.wide-1-5 {
+	width: 75%;
+	margin: 0 8% 2%;
+	float: left;
+}
+
+.wide-2 {
+	width: 98%;
+	margin-bottom: 2%;
+	float: left;
+}
+
+@media screen and (max-width: 400px) {
+	.desc {
+		width: 100%;
+		position: relative;
+	}
+}
