@@ -2,9 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width" />
-		<title>JaytheRobot / Contact</title>
-		
+		<title>JaytheRobot / Gallery</title>
+
 		<!-- Icons -->
 		<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
@@ -26,24 +25,25 @@
 
 		<link rel="icon" type="image/png" href="icon/favicon.png" />
 		<link rel="shortcut icon" href="icon/favicon.ico">
+
 		
 		<!-- CDNs -->
 		<!-- WILL WE NEED JQ? WHO KNOWS... <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script> -->
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="css/robot.css"/>
+		<link rel="stylesheet" href="../css/content.css"/>
+		<link rel="stylesheet" href="../css/robot.css"/>
 
 	</head>
 	<body>
-		<div class="page-wrap">
 		<header>
 			<div class="navbar">
 				<div class="wrapper">
-					<img src="images/logo.png" id="logo">
+					<img src="../images/logo.png" id="logo">
 					<nav>
-						<a href="index.html">Work</a>
-						<a href="about.html">About</a>
-						<a href="contact.html">Contact</a>
+						<a href="../index.html">Work</a>
+						<a href="../about.html">About</a>
+						<a href="../contact.html">Contact</a>
 					</nav>
 				</div>
 				<!-- End of wrapper -->
@@ -52,19 +52,20 @@
 			<div id="mobilebar"></div> 	<!-- This creates an additional color bar at the top for mobile devices 
 										to bridge the gap between navbar and the mobile menu. Hidden on desktop.-->
 		</header>
-		<section id="contact">
+		<section>
 			<div class="wrapper">
-				<h1>Want to get in touch?</h1>
-				<form action="mail.php" method="POST">
-					<p>Name</p><input type="text" name="name" id="input-bar">
-					<p>Email</p><input type="text" name="email" id="input-bar">
-					<p>Message</p><textarea name="message" rows="6" cols="50"></textarea><br>
-					<input type="submit" value="Send"><input type="reset" value="Clear">
-				</form>
+				<div class="desc">
+					<h1>"Bubbles"</h1>
+					<p>2015</p>
+					<p>Acrylic on wood.</p>
+				</div>
+				<div class="images">
+					<!-- Use .wide-1 for two images side by side and .wide-2 for one image across the div. -->
+					<img class="wide-1-5" src="../images/Bubbles.jpg"/>
+				</div>
 			</div>
 			<!-- End of wrapper -->
 		</section>
-		</div>
 
 		<footer>
 			<div class="wrapper">

@@ -6,5 +6,5 @@ $recipient = "jayb@jaytherobot.com";
 $subject = "The robots sent me";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
+readfile("thank-you.html");
 ?>

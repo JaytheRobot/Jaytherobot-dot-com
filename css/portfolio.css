@@ -6,13 +6,13 @@
 }
 
 /* SALVATTORE */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 320px) {
 	#grid[data-columns]::before {
 		content: '1 .column.size-1of1';
 	}
 }
 
-@media screen and (min-width: 421px) and (max-width: 650px) {
+@media screen and (min-width: 321px) and (max-width: 650px) {
 	#grid[data-columns]::before {
 		content: '2 .column.size-1of2';
 	}
