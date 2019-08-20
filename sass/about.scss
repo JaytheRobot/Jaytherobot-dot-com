@@ -1,0 +1,98 @@
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+/* About */
+#about-section {
+	width: 100%;
+	height: 1000px;
+	background-color: $blue-color;
+
+	@media screen and (max-width: $break-mob){
+		height: auto;
+	}
+	
+	h1, p, h2 {
+		color: $five-gray;
+	}
+
+	p {
+		font-size: 14px;
+		font-family: $body-fonts;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-weight: 500;
+		font-family: $display-fonts;
+
+		@media screen and (max-width: $break-mob) {
+			text-align: center;
+		}
+	}
+
+	.minibar {
+		box-shadow: 0px -1px 7px #999;
+	}
+
+	.section-title {
+
+		.title-divider {
+			border-top: solid 1.5px $blue-darker;
+			border-bottom: solid 1.5px $blue-lighter;
+		}
+	}
+
+	.profile {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+
+		@media screen and (max-width: $break-mob) {
+			flex-flow: column;
+		}
+
+		.profile-pic {
+			width: 35%;
+			height: auto;
+			margin: 20px;
+			box-shadow: 0 10px 15px $blue-darker;
+
+			@media screen and (max-width: $break-mob){
+				width: 75%;
+			}
+		}
+
+		.profile-text {
+			margin-left: 50px;
+			width: 55%;
+
+			@media screen and (max-width: $break-mob) {
+				margin: 0 20px 20px;
+			}
+		}
+	}
+}
+
+// .about-par {
+// 	width: 40%;
+// 	float: left;
+// 	padding: 0 40px;
+
+// 	p {
+// 		color: $five-gray;
+// 		font-family: GillSans, sans-serif;
+// 	}
+
+// 	@media screen and (max-width: $break-smr) {
+// 		width: 98%;
+// 	}
+// }
+
+// .me {
+// 	width: 40%;
+// 	float: left;
+
+// 	@media screen and (max-width: $break-smr) {
+// 		width: 98%;
+// 	}
+// }
