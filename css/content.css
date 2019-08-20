@@ -1,0 +1,213 @@
+.gal-wrapper {
+  max-width: 1016px;
+  margin: 70px auto 100px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  /* end desc-style */
+  /* end design-desc-style */
+  /* For chaning the height of specific image drop-downs. */
+}
+@media screen and (max-width: 1016px) {
+  .gal-wrapper {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .gal-wrapper {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper {
+    width: 100%;
+  }
+}
+.gal-wrapper img.thumb-div {
+  width: 190px;
+  margin: 5px;
+  box-shadow: 0px 4px 10px #888;
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper img.thumb-div {
+    width: 43vw;
+  }
+}
+.gal-wrapper .pusher {
+  height: 625px;
+  /* determines how much space is made between thumbs */
+  margin: 0 10px 10px;
+  transition: 0.5s height ease-out;
+}
+.gal-wrapper .pusher.ng-hide {
+  height: 0px !important;
+}
+.gal-wrapper .pusher.ng-hide > .art-desc-style, .gal-wrapper .pusher.ng-hide .design-desc-style {
+  height: 0px !important;
+}
+.gal-wrapper .art-desc-style {
+  position: absolute;
+  margin: 5px;
+  padding: 10px;
+  height: 605px;
+  transition: 0.5s height ease-out;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  background-color: #7b7978;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #f0f0f0;
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper .art-desc-style {
+    margin: 0;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+}
+.gal-wrapper .art-desc-style img.art-block {
+  max-width: 65%;
+  max-height: 590px;
+  margin: 10px;
+  box-shadow: 0px 10px 15px #383838;
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper .art-desc-style img.art-block {
+    max-width: 95%;
+    max-height: 470px;
+  }
+}
+.gal-wrapper .design-desc-style {
+  position: absolute;
+  margin: 5px;
+  padding: 10px;
+  height: 605px;
+  transition: 0.5s height ease-out;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  background-color: #7b7978;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #f0f0f0;
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper .design-desc-style {
+    margin: 0;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+}
+.gal-wrapper .design-desc-style .design-block {
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: visible;
+  width: 65%;
+  /* for manipulating individual images in the ngRepeat. Feels hacky, but what can you do. */
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper .design-desc-style .design-block {
+    width: 95%;
+  }
+}
+.gal-wrapper .design-desc-style .design-block img {
+  max-height: 600px;
+  width: 48%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 10px 15px #383838;
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper .design-desc-style .design-block img {
+    width: 47%;
+  }
+}
+.gal-wrapper .design-desc-style .design-block #design-img3-1,
+.gal-wrapper .design-desc-style .design-block #design-img3-2,
+.gal-wrapper .design-desc-style .design-block #design-img1-3,
+.gal-wrapper .design-desc-style .design-block #design-img3-4,
+.gal-wrapper .design-desc-style .design-block #design-img1-5 {
+  width: 75%;
+}
+.gal-wrapper .design-desc-style .design-block #design-img5-6 {
+  width: 50%;
+}
+.gal-wrapper .design-desc-style .design-block #game-img1-0,
+.gal-wrapper .design-desc-style .design-block #game-img5-0 {
+  width: 98%;
+}
+.gal-wrapper .design-desc-style .design-block #game-img2-0,
+.gal-wrapper .design-desc-style .design-block #game-img3-0,
+.gal-wrapper .design-desc-style .design-block #game-img4-0 {
+  width: 31.5%;
+}
+.gal-wrapper #design-height-4,
+.gal-wrapper #design-height-5,
+.gal-wrapper #design-height-6 {
+  height: 805px;
+}
+.gal-wrapper #design-pusher-4,
+.gal-wrapper #design-pusher-5,
+.gal-wrapper #design-pusher-6 {
+  height: 825px;
+}
+.gal-wrapper #game-height-0 {
+  height: 725px;
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper #design-height-1 {
+    height: 655px;
+  }
+  .gal-wrapper #design-pusher-1 {
+    height: 675px;
+  }
+  .gal-wrapper #design-height-4,
+.gal-wrapper #design-height-5,
+.gal-wrapper #design-height-6 {
+    height: 835px;
+  }
+  .gal-wrapper #design-pusher-4, .gal-wrapper #design-pusher-5, .gal-wrapper #design-pusher-6 {
+    height: 855px;
+  }
+}
+.gal-wrapper .text-block {
+  padding: 20px;
+  margin-left: 10px;
+  width: 35%;
+  align-self: center;
+}
+.gal-wrapper .text-block h3 {
+  font-family: CaviarDreams;
+}
+.gal-wrapper .text-block p {
+  font-family: GillSans;
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper .text-block p {
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gal-wrapper .text-block {
+    width: 85%;
+    padding: 10px;
+  }
+}
+
+/* end gal-wrapper */
+
+/*# sourceMappingURL=content.css.map */

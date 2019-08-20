@@ -1,0 +1,101 @@
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+#contact-section {
+	width: 100%;
+	height: 1000px;
+
+	@media screen and (max-width: $break-mob) {
+		height: auto;
+	}
+
+	h1, h3 {
+		font-family: $display-fonts;
+		color: #555;
+	}
+
+	h3 {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	p {
+		font-family: $body-fonts;
+		font-size: 14px;
+		color: #555;
+	}
+
+	.email-wrapper {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		height: 450px;
+
+		@media screen and (max-width: $break-mob) {
+			flex-flow: column;
+			height: auto;
+		}
+
+		div {
+			width: 48%;
+
+			@media screen and (max-width: $break-mob) {
+				width: 100%;
+				margin: 0 10px;
+			}
+		}
+
+		#email-form {
+			margin-left: 50px;
+
+			@media screen and (max-width: $break-mob) {
+				margin: 0 10px;
+			}
+		}
+
+
+	}
+
+	.input-bar {
+		width: 100%;
+
+		@media screen and (max-width: $break-mob) {
+			width: 95%;
+		}
+	}
+
+	#email-icon {
+		width: 200px;
+		margin: 18px auto;
+
+		@media screen and (max-width: $break-mob) {
+			width: 150px;
+			margin: 10px auto;
+		}
+	}
+
+	.social-wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+
+		a {
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.social-icon {
+			width: 200px;
+			margin: 0 auto;
+
+			@media screen and (max-width: $break-mob) {
+				width: 150px;
+			}
+		}
+
+		@media screen and (max-width: $break-mob) {
+			align-items: center;
+			margin-top: 20px;
+		}
+	}
+}

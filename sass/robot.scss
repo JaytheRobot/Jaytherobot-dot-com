@@ -1,0 +1,307 @@
+@import 'helpers/mixins';
+@import 'helpers/variables';
+@import 'content';
+@import 'about';
+@import 'contact';
+
+@font-face {
+	font-family: CaviarDreams;
+	src: url(../fonts/CaviarDreams.ttf);
+}
+@font-face {
+	font-family: CaviarBold;
+	src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+@font-face {
+	font-family: GillSans;
+	src: url(../fonts/GillSansMTPro-Medium.otf);
+}
+
+// SITE DIR: C:\Users\Jay Bramhall\Libraries\Pictures\Art and Projects\JaytheRobot dotCom
+// WATCH CMD REMINDER: sass --watch [scss dir]:[css dir]
+
+html { height: 100%; }
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: $bg-color;
+}
+
+
+
+.wrapper { // Sets page max width and centers content
+	max-width: $break-lg;
+	margin: 0 auto;
+
+	@media screen and (max-width: $break-lg) { // For when page is smaller than max-width
+		width: 95%; 
+		margin: 0;
+	}
+}
+
+.section-title {
+	text-align: center;
+	width: 100%;
+	margin: 50px 0;
+
+	@media screen and (max-width: $break-mob) {
+		margin: 30px 0;
+	}
+
+	h1 {
+		font-family: $display-fonts;
+		font-size: 35px;
+		color: #555;
+		margin-top: 0;
+		margin-bottom: 30px;
+		font-weight: 500;
+
+		@media screen and (max-width: $break-mob){
+			font-size: 30px;
+		}
+	}
+
+	.title-divider {
+		width: 50%;
+		border-top: solid 1.5px #aaa;
+		border-bottom: solid 1.5px #fff;
+		margin: 0px auto;
+
+		@media screen and (max-width: $break-mob) {
+			width: 90%;
+		}
+	}
+}
+
+/* Footer */
+
+.page-wrap { // Sinks footer to bottom of page. Not necessary anymore for single page site.
+	min-height: 100%;
+	margin-bottom: -40px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+	height: 40px;
+}
+
+footer {
+	height: 40px;
+	width: 100%;
+	background-color: #202020;
+	clear: both;
+
+	ul {
+		float: right;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		list-style: none;
+		margin-top: 14px;
+		margin-bottom: 0;
+		width: 250px;
+		padding: 0;
+
+		@media screen and (max-width: $break-mob) {
+			display: none;
+		}
+	}
+
+	h6 {
+		font-family: GillSans, sans-serif;
+		color: $footer-text;
+		font-weight: 400;
+		padding-bottom: 0;
+		margin: 0;
+
+		@media screen and (max-width: $break-mob) {
+			margin-left: 10px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $footer-text;
+	}
+
+	#copyright {
+		float: left;
+		margin-top: 14px;
+	}
+}
+
+
+.minibar { //small white divider bars
+	height: 5px;
+	background-color: $five-gray;
+	box-shadow: 0px 5px 10px #999;
+}
+
+/* Site Title */
+
+.big-title {
+	text-align: center;
+	font-family: $display-fonts;
+	color: #555;
+
+	h1 {
+		font-size: 66px;
+		margin-top: 67px;
+		margin-bottom: 0;
+	}
+
+	h4 {
+		font-size: 16px;
+		letter-spacing: 4.4px;
+		margin: 0;
+	}
+}
+
+/* Header */
+
+header {
+	h1 {
+		color: $five-gray;
+		margin: 38px 0 0 35px;
+		padding: 0;
+		font-family: $display-fonts;
+		float: left;
+	}
+
+	nav {
+		ul {
+			float: right;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			list-style: none;
+			margin-top: 45px;
+			padding: 0;
+		}
+
+			@media screen and (max-width: $break-sm) { 
+				background-color: $blue-color;
+				float: none;
+				width: 100%;
+				margin: 0 auto;
+				padding: 10px 0;
+				justify-content: center;
+			}
+		}
+
+	li {
+		margin: 0 15px;
+		font-family: $display-fonts;
+		font-weight: 600;
+		font-size: 25px;
+		color: $five-gray;
+
+		@media screen and (max-width: $break-sm) {
+			font-size: 18px;
+			margin: 0 5px;
+		}
+
+		a {
+			text-decoration: none;
+			color: $five-gray;
+		}
+
+		a:hover {
+			border-bottom: 1.5px solid $five-gray;
+		}
+	}
+
+	.navbar { //blue bar with logo and nav
+		height: 120px;
+		background-color: $blue-color;
+		margin: 0;
+
+		@media screen and (max-width: $break-sm) {
+			height: 100px;
+
+			.wrapper {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	#mobilebar {
+		@media screen and (max-width: $break-sm) {
+			height: 68px;
+			background-color: $blue-darker;
+		}
+	}
+
+	#logo {
+		width: 200px;
+		margin: 0 auto;
+		padding: 15px;
+		display: block;
+		// float: left;
+
+		@media screen and (max-width: $break-lg) {
+			margin-left: 20px;
+		}
+
+		@media screen and (max-width: $break-sm) {
+			width: 150px;
+			float: none;
+			margin: 10px auto 0;
+		}
+	}
+
+	.scroll-menu {
+		height: 35px;
+		width: 100%;
+		background-color: $blue-color;
+		border-bottom: 3px solid $five-gray;
+		position: absolute;
+		z-index: 2;
+		display: none;
+		padding-top: 10px;
+		text-align: center;
+
+		h2 {
+			margin: 0 15px;
+			padding: 0;
+			font-family: $display-fonts;
+			font-size: 20px;
+			font-weight: 500;
+			color: $five-gray;
+			float: left;
+
+			@media screen and (max-width: $break-sm) {
+				display: none;
+			}
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			float: right;
+
+			@media screen and (max-width: $break-sm) {
+				float: none;
+			}
+		}
+
+		li {
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
+
+	.fixed {
+		position: fixed;
+		top: 0;
+	}
+}
+
