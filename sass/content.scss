@@ -1,0 +1,246 @@
+@import "helpers/variables";
+
+.gal-wrapper {
+	max-width: $break-lg;
+	margin: 70px auto 100px;
+	position: relative;
+	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+
+	@media screen and (max-width: $break-lg) { // For when page is smaller than max-width
+		width: 95%;
+	}
+
+	@media screen and (max-width: 840px) {
+		justify-content: center;
+	}
+
+	@media screen and (max-width: $break-mob) {
+		width: 100%;
+	}
+
+	img.thumb-div {
+		// height: 190px;
+		width: 190px;
+		margin: 5px;
+		box-shadow: 0px 4px 10px #888;
+
+		@media screen and (max-width: $break-mob) {
+			// height: 45%;
+			width: 43vw;
+		}
+	}
+
+	.pusher {
+		height: 625px; /* determines how much space is made between thumbs */
+		margin: 0 10px 10px;
+		transition: 0.5s height ease-out;
+		&.ng-hide {
+			height: 0px !important;
+			> .art-desc-style, .design-desc-style {
+				height: 0px !important;
+			}
+		}
+	}
+
+	.art-desc-style {
+		position: absolute;
+		margin: 5px;
+		padding: 10px;
+		height: 605px;
+		transition: 0.5s height ease-out;
+		overflow: hidden;
+		left: 0;
+		right: 0;
+		background-color: $desc-color;
+
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		color: $five-gray;
+
+		@media screen and (max-width: $break-mob) {
+			margin: 0;
+			flex-flow: column;
+			justify-content: flex-start;
+		}
+
+		img.art-block {
+			max-width: 65%;
+			max-height: 590px;
+			margin: 10px;
+			box-shadow: 0px 10px 15px #383838;
+
+			@media screen and (max-width: $break-mob) {
+				max-width: 95%;
+				max-height: 470px;
+			}
+		}
+
+		// .art-flex-wrapper {
+		// 	display: flex;
+		// 	flex-flow: row;
+		// 	justify-content: center;
+		// 	align-content: center;
+		// 	align-items: center;
+		// 	color: $five-gray;
+
+		// 	@media screen and (max-width: $break-mob) {
+		// 		margin: 0;
+		// 		flex-flow: column;
+		// 		justify-content: flex-start;
+		// 	}
+
+		// 	img.art-block {
+		// 		max-width: 65%;
+		// 		max-height: 590px;
+		// 		margin: 10px;
+		// 		box-shadow: 0px 10px 15px #383838;
+
+		// 		@media screen and (max-width: $break-mob) {
+		// 			max-width: 95%;
+		// 			max-height: 470px;
+		// 		}
+		// 	}
+		// }
+	} /* end desc-style */
+
+	.design-desc-style {
+		position: absolute;
+		margin: 5px;
+		padding: 10px;
+		height: 605px;
+		transition: 0.5s height ease-out;
+		overflow: hidden;
+		left: 0;
+		right: 0;
+		background-color: $desc-color;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		color: $five-gray;
+
+		@media screen and (max-width: $break-mob) {
+			margin: 0;
+			flex-flow: column;
+			justify-content: flex-start;
+		}
+
+
+		.design-block {
+			padding: 10px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			justify-content: center;
+			overflow: visible;
+			width: 65%;
+
+			@media screen and (max-width: $break-mob) {
+				width: 95%;
+			}
+
+			img {
+				max-height: 600px;
+				width: 48%;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				box-shadow: 0px 10px 15px #383838;
+
+				@media screen and (max-width: $break-mob) {
+					width: 47%;
+				}
+			}
+			/* for manipulating individual images in the ngRepeat. Feels hacky, but what can you do. */
+			#design-img3-1, 
+			#design-img3-2, 
+			#design-img1-3,
+			#design-img3-4,
+			#design-img1-5, {
+				width: 75%;
+			}
+			#design-img5-6 {
+				width: 50%;
+			}
+			#game-img1-0, 
+			#game-img5-0 {
+				width: 98%;
+			}
+			#game-img2-0, 
+			#game-img3-0, 
+			#game-img4-0{
+				width: 31.5%
+			}
+		}
+	} /* end design-desc-style */
+
+	/* For chaning the height of specific image drop-downs. */
+	#design-height-4,
+	#design-height-5,
+	#design-height-6 {
+		height: 805px;
+	}
+
+	#design-pusher-4,
+	#design-pusher-5,
+	#design-pusher-6 {
+		height: 825px;
+	}
+
+	#game-height-0 {
+		height: 725px;
+	}
+
+	@media screen and (max-width: $break-mob) {
+		#design-height-1 {
+			height: 655px;
+		}
+
+		#design-pusher-1 {
+			height: 675px;
+		}
+
+		#design-height-4, 
+		#design-height-5, 
+		#design-height-6 {
+			height: 835px;
+		}
+
+		#design-pusher-4, #design-pusher-5, #design-pusher-6 {
+			height: 855px;
+		}
+	}
+
+	.text-block {
+		padding: 20px;
+		margin-left: 10px;
+		width: 35%;
+		align-self: center;
+
+		h3 {
+			font-family: CaviarDreams;
+		}
+
+		p {
+			font-family: GillSans;
+
+			@media screen and (max-width: $break-mob){
+				margin: 10px 0;
+				font-size: 0.9em;
+			}
+		}
+
+		@media screen and (max-width: $break-mob) {
+			width: 85%;
+			padding: 10px;
+		}
+	}
+} /* end gal-wrapper */

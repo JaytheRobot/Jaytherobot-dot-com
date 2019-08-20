@@ -1,0 +1,95 @@
+#contact-section {
+  width: 100%;
+  height: 1000px;
+}
+@media screen and (max-width: 600px) {
+  #contact-section {
+    height: auto;
+  }
+}
+#contact-section h1, #contact-section h3 {
+  font-family: CaviarBold, GillSans, sans-serif;
+  color: #555;
+}
+#contact-section h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+#contact-section p {
+  font-family: GillSans, sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+#contact-section .email-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  height: 450px;
+}
+@media screen and (max-width: 600px) {
+  #contact-section .email-wrapper {
+    flex-flow: column;
+    height: auto;
+  }
+}
+#contact-section .email-wrapper div {
+  width: 48%;
+}
+@media screen and (max-width: 600px) {
+  #contact-section .email-wrapper div {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+#contact-section .email-wrapper #email-form {
+  margin-left: 50px;
+}
+@media screen and (max-width: 600px) {
+  #contact-section .email-wrapper #email-form {
+    margin: 0 10px;
+  }
+}
+#contact-section .input-bar {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  #contact-section .input-bar {
+    width: 95%;
+  }
+}
+#contact-section #email-icon {
+  width: 200px;
+  margin: 18px auto;
+}
+@media screen and (max-width: 600px) {
+  #contact-section #email-icon {
+    width: 150px;
+    margin: 10px auto;
+  }
+}
+#contact-section .social-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#contact-section .social-wrapper a {
+  text-align: center;
+  text-decoration: none;
+}
+#contact-section .social-wrapper .social-icon {
+  width: 200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  #contact-section .social-wrapper .social-icon {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact-section .social-wrapper {
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
