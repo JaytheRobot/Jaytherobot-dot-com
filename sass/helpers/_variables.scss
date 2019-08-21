@@ -1,14 +1,24 @@
 // Common Colors
-$blue-color: #4a4c99; //#308fff;
-$blue-lighter: #6467cc; //#7cb8ff;
-$blue-darker: #333573; //#2675d3;
+
+//Blue Scheme
+$blue-color: #308fff;
+$blue-lighter: #7cb8ff;
+$blue-darker: #2675d3;
+
+//Purple Scheme
+/*$blue-color: #4a4c99; 
+$blue-lighter: #6467cc; 
+$blue-darker: #333573;*/
+
 $five-gray: #f0f0f0;
 $bg-color: #eaf0f9;
 $desc-color: #7b7978;
 $footer-text: #a8a8a8;
+
 // Fonts
 $body-fonts: GillSans, sans-serif;
 $display-fonts: CaviarBold, GillSans, sans-serif;
+
 // Media Break Points
 $break-mob: 600px;
 $break-sm: 600px;
