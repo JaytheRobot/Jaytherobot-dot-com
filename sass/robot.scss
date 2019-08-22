@@ -176,24 +176,45 @@ header {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
+		align-items: flex-end;
+
+		@media screen and (max-width: $break-sm) {
+			align-items: flex-start;
+		}
+
+		#logo {
+			width: 300px;
+			margin-top: 15px;
+			flex-shrink: 0;
+
+	/*		@media screen and (max-width: $break-lg) {
+				width: 200px;
+			}*/
+
+			@media screen and (max-width: $break-sm) {
+				width: 150px;
+			}
+		}
 
 		ul {
 			display: flex;
 			flex-flow: row;
 			justify-content: space-evenly;
 			list-style: none;
-			margin-top: 220px;
 			padding: 0;
+			margin-bottom: 60px;
 			width: 300px;
-		}
 
-			@media screen and (max-width: $break-sm) { 
-				background-color: $blue-color;
-				float: none;
-				width: 100%;
-				margin: 0 auto;
-				padding: 10px 0;
-				justify-content: center;
+				@media screen and (max-width: $break-sm) { 
+				//	background-color: $blue-color;
+				//	float: none;
+					width: 100%;
+				//	margin: 0 auto;
+					padding: 10px 0;
+					justify-content: center;
+					flex-flow: column nowrap;
+					align-items: center;
+				}
 			}
 		}
 
@@ -206,7 +227,7 @@ header {
 
 		@media screen and (max-width: $break-sm) {
 			font-size: 18px;
-			margin: 0 5px;
+			margin: 10px 0;
 		}
 
 		a {
@@ -225,7 +246,7 @@ header {
 		margin: 0;
 
 		@media screen and (max-width: $break-sm) {
-			height: 100px;
+			height: 140px;
 
 			.wrapper {
 				width: 100%;
@@ -238,23 +259,6 @@ header {
 		@media screen and (max-width: $break-sm) {
 			height: 68px;
 			background-color: $blue-darker;
-		}
-	}
-
-	#logo {
-		width: 300px;
-		// margin: 0 auto;
-		margin-top: 15px;
-		// display: block;
-
-		@media screen and (max-width: $break-lg) {
-			margin-left: 20px;
-		}
-
-		@media screen and (max-width: $break-sm) {
-			width: 150px;
-			float: none;
-			margin: 10px auto 0;
 		}
 	}
 
