@@ -547,7 +547,7 @@ header nav ul {
   flex-flow: row;
   justify-content: space-evenly;
   list-style: none;
-  margin-top: 75px;
+  margin-top: 220px;
   padding: 0;
   width: 300px;
 }
@@ -582,7 +582,7 @@ header li a:hover {
   border-bottom: 1.5px solid #f0f0f0;
 }
 header .navbar {
-  height: 175px;
+  height: 280px;
   background-color: #308fff;
   margin: 0;
 }
@@ -602,7 +602,7 @@ header .navbar {
   }
 }
 header #logo {
-  width: 200px;
+  width: 300px;
   margin-top: 15px;
 }
 @media screen and (max-width: 1016px) {
