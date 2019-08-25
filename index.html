@@ -136,8 +136,8 @@
 					<span ng-click="showMe($index, 'games')">
 						<img class="thumb-div" ng-attr-id="{{ 'thumb-' + $index }}" ng-src="{{ work.thumb }}" />
 					</span>
-					<div ng-show="work.checkHidden" class="pusher">
-						<div class="design-desc-style" ng-attr-id="{{ 'game-height-' + $index }}">>
+					<div ng-show="work.checkHidden" class="pusher" ng-attr-id="{{ 'game-pusher-' + $index }}">
+						<div class="design-desc-style" ng-attr-id="{{ 'game-height-' + $index }}">
 							<div class="design-block"> 
 								<img ng-attr-id="{{ 'game-img1-' + $index }}" ng-src="{{ work.image1 }}" /> 
 								<img ng-attr-id="{{ 'game-img2-' + $index }}" ng-src="{{ work.image2 }}" />

@@ -1,7 +1,7 @@
 @import "helpers/variables";
 
 .gal-wrapper {
-	max-width: $break-lg;
+	max-width: 1300px;
 	margin: 70px auto 100px;
 	position: relative;
 	
@@ -25,7 +25,7 @@
 
 	img.thumb-div {
 		// height: 190px;
-		width: 190px;
+		width: 250px;
 		margin: 5px;
 		box-shadow: 0px 4px 10px #888;
 
@@ -36,7 +36,7 @@
 	}
 
 	.pusher {
-		height: 625px; /* determines how much space is made between thumbs */
+		height: 675px; /* determines how much space is made between thumbs */
 		margin: 0 10px 10px;
 		transition: 0.5s height ease-out;
 		&.ng-hide {
@@ -51,7 +51,7 @@
 		position: absolute;
 		margin: 5px;
 		padding: 10px;
-		height: 605px;
+		height: 650px;
 		transition: 0.5s height ease-out;
 		overflow: hidden;
 		left: 0;
@@ -196,7 +196,11 @@
 	}
 
 	#game-height-0 {
-		height: 725px;
+		height: 865px;
+	}
+
+	#game-pusher-0 {
+		height: 865px;
 	}
 
 	@media screen and (max-width: $break-mob) {
