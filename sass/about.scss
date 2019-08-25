@@ -5,7 +5,7 @@
 #about-section {
 	width: 100%;
 	height: 1000px;
-	background-color: $blue-color;
+	background-image: linear-gradient($nav-grad1, $nav-grad2);
 
 	@media screen and (max-width: $break-mob){
 		height: auto;
@@ -37,8 +37,8 @@
 	.section-title {
 
 		.title-divider {
-			border-top: solid 1.5px $blue-darker;
-			border-bottom: solid 1.5px $blue-lighter;
+			border-top: solid 1.5px #c12a6a;
+			border-bottom: solid 1.5px #f071ca;
 		}
 	}
 
@@ -55,7 +55,7 @@
 			width: 35%;
 			height: auto;
 			margin: 20px;
-			box-shadow: 0 10px 15px $blue-darker;
+			box-shadow: 0 10px 15px #a8451e;
 
 			@media screen and (max-width: $break-mob){
 				width: 75%;
