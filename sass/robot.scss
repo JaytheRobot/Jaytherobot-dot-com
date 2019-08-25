@@ -151,6 +151,10 @@ footer {
 		font-size: 66px;
 		margin-top: 100px;
 		margin-bottom: 0;
+
+		@media screen and (max-width: $break-sm) {
+			margin-top: 30px;
+		}
 	}
 
 	h4 {
@@ -216,27 +220,27 @@ header {
 					align-items: center;
 				}
 			}
-		}
 
-	li {
-		margin: 0 15px;
-		font-family: $display-fonts;
-		font-weight: 600;
-		font-size: 25px;
-		color: $five-gray;
-
-		@media screen and (max-width: $break-sm) {
-			font-size: 18px;
-			margin: 10px 0;
-		}
-
-		a {
-			text-decoration: none;
+		li {
+			margin: 0 15px;
+			font-family: $display-fonts;
+			font-weight: 600;
+			font-size: 25px;
 			color: $five-gray;
-		}
 
-		a:hover {
-			border-bottom: 1.5px solid $five-gray;
+			@media screen and (max-width: $break-sm) {
+				font-size: 18px;
+				margin: 10px 0;
+			}
+
+			a {
+				text-decoration: none;
+				color: $five-gray;
+			}
+
+			a:hover {
+				border-bottom: 2px solid $five-gray;
+			}
 		}
 	}
 
@@ -247,7 +251,7 @@ header {
 		margin: 0;
 
 		@media screen and (max-width: $break-sm) {
-			height: 140px;
+			height: 145px;
 
 			.wrapper {
 				width: 100%;
@@ -256,14 +260,14 @@ header {
 		}
 	}
 
-	#mobilebar {
-		@media screen and (max-width: $break-sm) {
-			height: 68px;
-			background-color: $blue-darker;
-		}
-	}
+	// #mobilebar {  // ---- Depreciated -----
+	// 	@media screen and (max-width: $break-sm) {
+	// 		height: 68px;
+	// 		background-color: $blue-darker;
+	// 	}
+	// }
 
-	.scroll-menu {
+	.scroll-menu { // Appears when scrolling down
 		height: 35px;
 		width: 100%;
 		background-color: $nav-grad1;
@@ -303,8 +307,16 @@ header {
 		}
 
 		li {
+			margin: 0 10px;
+			font-family: $display-fonts;
 			font-size: 20px;
 			font-weight: 500;
+			color: $five-gray;
+
+			a {
+				text-decoration: none;
+				color: $five-gray;
+			}
 		}
 	}
 

@@ -183,10 +183,12 @@ $blue-darker: #333573;*/
   .gal-wrapper #design-height-4,
 .gal-wrapper #design-height-5,
 .gal-wrapper #design-height-6 {
-    height: 835px;
+    height: 890px;
   }
-  .gal-wrapper #design-pusher-4, .gal-wrapper #design-pusher-5, .gal-wrapper #design-pusher-6 {
-    height: 855px;
+  .gal-wrapper #design-pusher-4,
+.gal-wrapper #design-pusher-5,
+.gal-wrapper #design-pusher-6 {
+    height: 910px;
   }
 }
 .gal-wrapper .text-block {
