@@ -13,6 +13,14 @@ var app = angular.module("robotGallery", ["ngAnimate"]);
 				// 	checkHidden: false
 				// },
 				{
+					name: "A Machine for Worries",
+					thumb: "images/thumbs/worries_tmb.jpg",
+					image: "images/Machine-for-Worries.jpg",
+					desc: "Acrylic and ink on canvas, 2019",
+					desc2: "",
+					checkHidden: false
+				},
+				{
 				 	name: "Assorted Succulent City",
 				 	thumb: "images/thumbs/assuci_tmb.jpg",
 				 	image: "images/AssortedSucculentCity.jpg",
@@ -29,9 +37,9 @@ var app = angular.module("robotGallery", ["ngAnimate"]);
 				 	checkHidden: false
 				},
 				{
-					name: "Tail-end District",
+					name: "Cloud Tail District",
 				 	thumb: "images/thumbs/tailend_tmb.jpg",
-				 	image: "images/TailendDistrict.jpg",
+				 	image: "images/Cloud-Tail-District.jpg",
 				 	desc: "Acrylic and ink on canvas, 2018",
 				 	desc2: "",
 				 	checkHidden: false
