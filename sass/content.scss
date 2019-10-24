@@ -165,7 +165,7 @@
 			#design-img1-3,
 			#design-img3-4,
 			#design-img1-5, {
-				width: 75%;
+				width: 70%;
 			}
 			#design-img5-6 {
 				width: 50%;
@@ -183,16 +183,26 @@
 	} /* end design-desc-style */
 
 	/* For chaning the height of specific image drop-downs. */
+	#design-height-1,
+	#design-height-2 {
+		height: 750px;
+	}
+
+	#design-pusher-1,
+	#design-pusher-2 {
+		height: 770px;
+	}
+
 	#design-height-4,
 	#design-height-5,
 	#design-height-6 {
-		height: 805px;
+		height: 1000px;
 	}
 
 	#design-pusher-4,
 	#design-pusher-5,
 	#design-pusher-6 {
-		height: 825px;
+		height: 1020px;
 	}
 
 	#game-height-0 {
