@@ -246,7 +246,7 @@ var app = angular.module("robotGallery", ["ngAnimate"]);
 					desc: "Manic Glam is an online boutique specializing in \"Trash Glasses\", sunglasses encrusted with charms centered around a particular theme. Each pair of glasses is a work of art in itself.",
 					desc2: "",
 					checkHidden: false
-				}
+				},
 				{
 					name: "Lone Echo Brewing logo",
 					thumb: "images/thumbs/loneecho_tmb.png",
@@ -259,7 +259,7 @@ var app = angular.module("robotGallery", ["ngAnimate"]);
 					desc: "Lone Echo is a homebrewing operation, creating small batches for close friends. It's logo is centered around it's mascot, Echo, a well-trained, energetic miniture husky.",
 					desc2: "",
 					checkHidden: false
-				}
+				},
 				{
 					name: "Postwriter band logo",
 					thumb: "images/thumbs/postwriter_tmb.png",
