@@ -28,12 +28,9 @@
 		<link rel="shortcut icon" href="/icon/favicon.ico">
 
 		<!-- CDNs -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-  		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
-  		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-animate.js"></script>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 
   		<!-- JS -->
-		<script type="text/javascript" src="js/robotGallery.js"></script>
 		<script type="text/javascript" src="js/fixedMenu.js"></script>
 		<script type="text/javascript" src="js/smoothScroll.js"></script>
 
@@ -43,7 +40,7 @@
 
 
 	</head>
-	<body ng-app="robotGallery">
+	<body>
 		<div class="page-wrap">
 			<a id="portfolio" class="smooth"></a>
 			<header>
@@ -99,90 +96,19 @@
 				<h1>JaytheRobot</h1>
 				<h4>Portfolio for Jay Bramhall</h4>
 			</div>
-			<!-- CSS for this section handled by content.css -->
-			<section id="portfolio-section" class="gal-wrapper" ng-controller="gallery">
+
+			
+			<!-- CSS for this section handled by gallery.css -->
+			<section id="portfolio-section" class="gal-wrapper">
 				
 				<!-- Artwork Section -->
-				<div class="section-title" style="margin-top: 0;">
-					<h1>Artwork</h1>
-					<div class="title-divider"></div>
-				</div>
-
-	 			<span ng-repeat="work in artworks">
-					<span ng-click="showMe($index, 'artworks')">
-						<a href=""><img class="thumb-div" ng-attr-id="{{ 'thumb-' + $index }}" ng-src="{{ work.thumb }}" /></a>
-					</span>
-					<div ng-show="work.checkHidden" class="pusher">
-						<div class="art-desc-style">
-							<!-- <div class="art-flex-wrapper"> Why was this div here? -->
-								<img class="art-block" ng-src="{{ work.image }}" />
-								<div class="text-block">
-									<h3>{{ work.name }}</h3>
-									<p>{{ work.desc }}</p>
-									<p>{{ work.desc2 }}</p>
-								</div>
-							<!-- </div> -->
-						</div>
-					</div>
-				</span>
+				
 				
 				<!-- Games and Pixels Section -->
- 				<div class="section-title">
-					<h1>Games and Pixel Art</h1>
-					<div class="title-divider"></div>
-				</div>
-				
-				<span ng-repeat="work in games">
-					<span ng-click="showMe($index, 'games')">
-						<img class="thumb-div" ng-attr-id="{{ 'thumb-' + $index }}" ng-src="{{ work.thumb }}" />
-					</span>
-					<div ng-show="work.checkHidden" class="pusher" ng-attr-id="{{ 'game-pusher-' + $index }}">
-						<div class="design-desc-style" ng-attr-id="{{ 'game-height-' + $index }}">
-							<div class="design-block"> 
-								<img ng-attr-id="{{ 'game-img1-' + $index }}" ng-src="{{ work.image1 }}" /> 
-								<img ng-attr-id="{{ 'game-img2-' + $index }}" ng-src="{{ work.image2 }}" />
-								<img ng-attr-id="{{ 'game-img3-' + $index }}" ng-src="{{ work.image3 }}" />
-								<img ng-attr-id="{{ 'game-img4-' + $index }}" ng-src="{{ work.image4 }}" />
-								<img ng-attr-id="{{ 'game-img5-' + $index }}" ng-src="{{ work.image5 }}" />
-								<img ng-attr-id="{{ 'game-img6-' + $index }}" ng-src="{{ work.image6 }}" />
-							</div>
-							<div class="text-block">
-								<h3>{{ work.name }}</h3>
-								<p>{{ work.desc }}</p>
-								<p>{{ work.desc2 }}</p>
-							</div>
-						</div>
-					</div>
-				</span>
+ 				
 
 				<!-- Graphic Design Section -->
-				<div class="section-title">
-					<h1>Graphic Design</h1>
-					<div class="title-divider"></div>
-				</div>
-
-				<span ng-repeat="work in designs">
-					<span ng-click="showMe($index, 'designs')">
-						<img class="thumb-div" ng-attr-id="{{ 'thumb-' + $index }}" ng-src="{{ work.thumb }}" />
-					</span>
-					<div ng-show="work.checkHidden" class="pusher" ng-attr-id="{{ 'design-pusher-' + $index }}">
-						<div class="design-desc-style" ng-attr-id="{{ 'design-height-' + $index }}">
-							<div class="design-block">
-								<img ng-attr-id="{{ 'design-img1-' + $index }}" ng-src="{{ work.image1 }}" />
-								<img ng-attr-id="{{ 'design-img2-' + $index }}" ng-src="{{ work.image2 }}" />
-								<img ng-attr-id="{{ 'design-img3-' + $index }}" ng-src="{{ work.image3 }}" />
-								<img ng-attr-id="{{ 'design-img4-' + $index }}" ng-src="{{ work.image4 }}" />
-								<img ng-attr-id="{{ 'design-img5-' + $index }}" ng-src="{{ work.image5 }}" />
-								<img ng-attr-id="{{ 'design-img6-' + $index }}" ng-src="{{ work.image6 }}" />
-							</div>
-							<div class="text-block">
-								<h3>{{ work.name }}</h3>
-								<p>{{ work.desc }}</p>
-								<p>{{ work.desc2 }}</p>
-							</div>
-						</div>
-					</div>
-				</span>
+				
 
 			</section>
 
