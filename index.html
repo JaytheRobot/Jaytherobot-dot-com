@@ -27,10 +27,10 @@
 		<link rel="icon" type="image/png" href="/icon/favicon.png" />
 		<link rel="shortcut icon" href="/icon/favicon.ico">
 
-		<!-- CDNs -->
+		<!-- JS -->
 		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-
-  		<!-- JS -->
+		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
 		<script type="text/javascript" src="js/fixedMenu.js"></script>
 		<script type="text/javascript" src="js/smoothScroll.js"></script>
 
@@ -97,18 +97,44 @@
 				<h4>Portfolio for Jay Bramhall</h4>
 			</div>
 
-			
+
 			<!-- CSS for this section handled by gallery.css -->
 			<section id="portfolio-section" class="gal-wrapper">
 				
 				<!-- Artwork Section -->
-				
+				<div class="grid">
+					<!-- <div class="grid-item"><img src="images/#.jpg"></div> -->
+					<div class="grid-sizer"></div>
+		  			<div class="grid-item"><img src="images/Machine-for-Worries.jpg"></div>
+		  			<div class="grid-item"><img src="images/AssortedSucculentCity.jpg"></div>
+		  			<div class="grid-item"><img src="images/MachineForTheCaffeinated.jpg"></div>
+		  			<div class="grid-item"><img src="images/Cloud-Tail-District.jpg"></div>
+		  			<div class="grid-item"><img src="images/Texas-etc.jpg"></div>
+		  			<div class="grid-item"><img src="images/Plastic-Boats.jpg"></div>
+		  			<div class="grid-item"><img src="images/Jumprope.jpg"></div>
+		  			<div class="grid-item"><img src="images/Paddleball.jpg"></div>
+		  			<div class="grid-item"><img src="images/Bubbles.jpg"></div>
+		  			<div class="grid-item"><img src="images/Skies.jpg"></div>
+		  			<div class="grid-item"><img src="images/Quick-Pose.jpg"></div>
+		  		</div>
+		  	</section>
 				
 				<!-- Games and Pixels Section -->
  				
 
 				<!-- Graphic Design Section -->
-				
+			<section class="gal-wrapper">
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="grid-item"><img src="images/ManicGlam.png"></div>
+					<div class="grid-item"><img src="images/BodyandChi-Logo.png"></div>
+					<div class="grid-item"><img src="images/LoneEcho.png"></div>
+					<div class="grid-item"><img src="images/Postwriter.png"></div>
+					<div class="grid-item"><img src="images/Tin-Roof-LogoB.png"></div>
+					<div class="grid-item"><img src="images/Jebs-Junkyard-Logo.png"></div>
+					<div class="grid-item"><img src="images/Raster-Games-Logo.png"></div>
+					<div class="grid-item"><img src="images/Lugdunon-Logo.png"></div>
+				</div>
 
 			</section>
 
@@ -200,4 +226,20 @@
 				</ul>
 			</div>
 		</footer>
+
+		<script type="text/javascript">
+		var $grid = $('.grid').masonry({
+
+			  // options
+			  itemSelector: '.grid-item',
+			  columnWidth: '.grid-sizer',
+			  percentPosition: true,
+			  gutter: 5
+		});
+
+
+		$grid.imagesLoaded().progress(function() {
+			$grid.masonry('layout');
+		});
+		</script>
 	</body>

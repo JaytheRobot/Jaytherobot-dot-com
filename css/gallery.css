@@ -1,0 +1,30 @@
+/*$blue-color: #4a4c99; 
+$blue-lighter: #6467cc; 
+$blue-darker: #333573;*/
+.grid {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33%;
+}
+
+.grid-item {
+  float: left;
+  margin-bottom: 2px;
+}
+.grid-item img {
+  width: 100%;
+}
+
+.grid-item--width2 {
+  width: 66%;
+}
+
+.gal-wrapper {
+  margin: 25px 0;
+}
+
+/*# sourceMappingURL=gallery.css.map */
