@@ -1,4 +1,9 @@
-/*$blue-color: #4a4c99; 
+/*$blue-color: #308fff;
+$blue-lighter: #7cb8ff;
+$blue-darker: #2675d3;
+
+//Purple Scheme
+$blue-color: #4a4c99; 
 $blue-lighter: #6467cc; 
 $blue-darker: #333573;*/
 /* About */
@@ -17,12 +22,12 @@ $blue-darker: #333573;*/
 }
 #about-section p {
   font-size: 14px;
-  font-family: GillSans, sans-serif;
+  font-family: RobotoLight, GillSans, sans-serif;
 }
 #about-section h2 {
   font-size: 30px;
   font-weight: 500;
-  font-family: CaviarBold, GillSans, sans-serif;
+  font-family: RobotoBlack, GillSans, sans-serif;
 }
 @media screen and (max-width: 600px) {
   #about-section h2 {

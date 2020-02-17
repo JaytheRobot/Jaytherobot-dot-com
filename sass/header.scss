@@ -1,0 +1,196 @@
+@import 'helpers/variables';
+
+header {
+	// h1 {
+	// 	color: $five-gray;
+	// 	margin: 38px 0 0 35px;
+	// 	padding: 0;
+	// 	font-family: $display-fonts;
+	// 	float: left;
+	// }
+
+	#title {
+		max-width: 600px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+
+		h1 {
+			font-family: $display-fonts;
+			font-size: 40px;
+			margin-top: 89px;
+			margin-bottom: 0;
+			color: $nav-grad2;
+
+			@media screen and (max-width: $break-sm) {
+
+			}
+		}
+	}
+
+	nav {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		@media screen and (max-width: $break-sm) {
+			align-items: flex-start;
+		}
+
+		#logo {
+			width: 200px;
+			margin-top: 15px;
+			margin-left: 20px;
+			margin-right: 20px;
+			flex-shrink: 0;
+
+	/*		@media screen and (max-width: $break-lg) {
+				width: 200px;
+			}*/
+
+			@media screen and (max-width: $break-sm) {
+				width: 150px;
+			}
+		}
+
+
+
+		ul {
+			display: flex;
+			flex-flow: row;
+			justify-content: flex-start;
+			list-style: none;
+			padding: 0;
+			margin-bottom: 40px;
+			width: 485px;
+
+				@media screen and (max-width: $break-sm) { 
+				//	background-color: $blue-color;
+				//	float: none;
+					width: 100%;
+				//	margin: 0 auto;
+					padding: 10px 0;
+					justify-content: center;
+					flex-flow: column nowrap;
+					align-items: center;
+				}
+			}
+
+		li {
+			
+			font-family: $body-fonts;
+			font-size: 18px;
+			color: $five-gray;
+
+			@media screen and (max-width: $break-sm) {
+				font-size: 18px;
+				margin: 10px 0;
+			}
+
+			a {
+				padding: 10px 20px;
+				text-decoration: none;
+				color: $five-gray;
+			}
+
+			a:hover {
+				background-color: $nav-grad1;
+				color: $five-gray;
+				//border-bottom: 2px solid $five-gray;
+			}
+		}
+	}
+
+	.navbar { //blue bar with logo and nav
+		height: 185px;
+		background-color: $nav-color;
+		//background-image: linear-gradient($nav-grad1, $nav-grad2);
+		margin: 0;
+
+		@media screen and (max-width: $break-sm) {
+			height: 145px;
+
+			.wrapper {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	// #mobilebar {  // ---- Depreciated -----
+	// 	@media screen and (max-width: $break-sm) {
+	// 		height: 68px;
+	// 		background-color: $blue-darker;
+	// 	}
+	// }
+
+	.scroll-menu { // Appears when scrolling down
+		height: 32px;
+		width: 100%;
+		background-color: $nav-color;
+		border-bottom: 3px solid $nav-grad2;
+		position: absolute;
+		z-index: 2;
+		display: none;
+		padding-top: 10px;
+		text-align: center;
+
+		h2 {
+			margin: 0 15px;
+			padding: 0;
+			font-family: $display-fonts;
+			font-size: 20px;
+			font-weight: 500;
+			color: $nav-grad2;
+			float: right;
+
+			@media screen and (max-width: $break-sm) {
+				display: none;
+			}
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			float: left;
+
+			@media screen and (max-width: $break-sm) {
+				float: none;
+			}
+		}
+
+		li {
+			font-family: $body-fonts;
+			font-size: 18px;
+			font-weight: 500;
+			color: $five-gray;
+
+			a {
+				padding: 10px 20px;
+				text-decoration: none;
+				color: $five-gray;
+			}
+			a:hover {
+				background-color: $nav-grad1;
+				//border-bottom: 2px solid $five-gray;
+			}
+		}
+	}
+
+	.fixed {
+		position: fixed;
+		top: 0;
+	}
+}
+
+.minibar { //small divider bars
+	height: 5px;
+	background-color: $nav-grad2;
+	box-shadow: 0px 5px 10px $nav-color;
+}

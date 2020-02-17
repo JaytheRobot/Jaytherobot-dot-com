@@ -1,4 +1,9 @@
-/*$blue-color: #4a4c99; 
+/*$blue-color: #308fff;
+$blue-lighter: #7cb8ff;
+$blue-darker: #2675d3;
+
+//Purple Scheme
+$blue-color: #4a4c99; 
 $blue-lighter: #6467cc; 
 $blue-darker: #333573;*/
 #contact-section {
@@ -11,7 +16,7 @@ $blue-darker: #333573;*/
   }
 }
 #contact-section h1, #contact-section h3 {
-  font-family: CaviarBold, GillSans, sans-serif;
+  font-family: RobotoBlack, GillSans, sans-serif;
   color: #555;
 }
 #contact-section h3 {
@@ -19,7 +24,7 @@ $blue-darker: #333573;*/
   font-weight: 500;
 }
 #contact-section p {
-  font-family: GillSans, sans-serif;
+  font-family: RobotoLight, GillSans, sans-serif;
   font-size: 14px;
   color: #555;
 }

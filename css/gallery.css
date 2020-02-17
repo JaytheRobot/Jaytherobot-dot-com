@@ -1,4 +1,9 @@
-/*$blue-color: #4a4c99; 
+/*$blue-color: #308fff;
+$blue-lighter: #7cb8ff;
+$blue-darker: #2675d3;
+
+//Purple Scheme
+$blue-color: #4a4c99; 
 $blue-lighter: #6467cc; 
 $blue-darker: #333573;*/
 .grid {
@@ -24,7 +29,7 @@ $blue-darker: #333573;*/
 }
 
 .gal-wrapper {
-  margin: 25px 0;
+  margin: 75px 0;
 }
 
 /*# sourceMappingURL=gallery.css.map */
