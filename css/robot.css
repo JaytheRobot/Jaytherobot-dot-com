@@ -31,7 +31,7 @@ header nav {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
 }
 @media screen and (max-width: 600px) {
@@ -57,11 +57,9 @@ header nav #logo {
 header nav ul {
   display: flex;
   flex-flow: row;
-  justify-content: flex-start;
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
-  width: 485px;
 }
 @media screen and (max-width: 600px) {
   header nav ul {
@@ -124,12 +122,16 @@ header .scroll-menu h2 {
   font-size: 20px;
   font-weight: 500;
   color: #e8935f;
-  float: right;
+  float: left;
 }
 @media screen and (max-width: 600px) {
   header .scroll-menu h2 {
     display: none;
   }
+}
+header .scroll-menu h2 a {
+  text-decoration: none;
+  color: #e8935f;
 }
 header .scroll-menu ul {
   list-style: none;
@@ -138,7 +140,7 @@ header .scroll-menu ul {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  float: left;
+  float: right;
 }
 @media screen and (max-width: 600px) {
   header .scroll-menu ul {
@@ -241,7 +243,7 @@ $blue-darker: #333573;*/
   }
 }
 #about-section .minibar {
-  box-shadow: 0px -1px 7px #999;
+  box-shadow: 0px -1px 7px #242226;
 }
 #about-section .section-title .title-divider {
   border-top: solid 1.5px #c12a6a;
@@ -297,7 +299,8 @@ $blue-darker: #333573;*/
 }
 #contact-section h1, #contact-section h3 {
   font-family: RobotoBlack, GillSans, sans-serif;
-  color: #555;
+  color: #d0d0d0;
+  letter-spacing: 1px;
 }
 #contact-section h3 {
   font-size: 18px;
@@ -306,7 +309,7 @@ $blue-darker: #333573;*/
 #contact-section p {
   font-family: RobotoLight, GillSans, sans-serif;
   font-size: 14px;
-  color: #555;
+  color: #d0d0d0;
 }
 #contact-section .email-wrapper {
   display: flex;

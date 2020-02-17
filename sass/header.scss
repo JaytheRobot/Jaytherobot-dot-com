@@ -32,7 +32,7 @@ header {
 		width: 100%;
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: flex-end;
 
 		@media screen and (max-width: $break-sm) {
@@ -60,11 +60,11 @@ header {
 		ul {
 			display: flex;
 			flex-flow: row;
-			justify-content: flex-start;
+			//justify-content: flex-end;
 			list-style: none;
 			padding: 0;
 			margin-bottom: 40px;
-			width: 485px;
+			//width: 485px;
 
 				@media screen and (max-width: $break-sm) { 
 				//	background-color: $blue-color;
@@ -144,10 +144,15 @@ header {
 			font-size: 20px;
 			font-weight: 500;
 			color: $nav-grad2;
-			float: right;
+			float: left;
 
 			@media screen and (max-width: $break-sm) {
 				display: none;
+			}
+
+			a {
+				text-decoration: none;
+				color: $nav-grad2;
 			}
 		}
 
@@ -158,7 +163,7 @@ header {
 			display: flex;
 			flex-flow: row;
 			justify-content: center;
-			float: left;
+			float: right;
 
 			@media screen and (max-width: $break-sm) {
 				float: none;

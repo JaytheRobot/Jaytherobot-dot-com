@@ -33,10 +33,12 @@
 		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
 		<script type="text/javascript" src="js/fixedMenu.js"></script>
 		<script type="text/javascript" src="js/smoothScroll.js"></script>
+		<script type="text/javascript" src="js/lightbox.min.js"></script>
 
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/robot.css"/>
+		<link rel="stylesheet" href="css/lightbox.css"/>
 
 
 	</head>
@@ -49,6 +51,10 @@
 						
 						<!-- Main navigation menu. divs are justified using flex. -->
 						<nav>
+							<div id="title">
+								<img src="images/logo.png" id="logo">
+								<h1>Jay<span style="color: #d865b0">the</span>Robot</h1>								
+							</div>
 							<div>
 								<ul>
 									<li class="portfolio-nav"><a href="#">Portfolio</a></li>
@@ -56,10 +62,6 @@
 									<li class="contact-nav"><a href="#">Contact</a></li>
 									<li><a href="https://www.etsy.com/shop/JaytheRobot">Store</a></li>	
 								</ul>
-							</div>
-							<div id="title">
-								<h1>Jay<span style="color: #d865b0">the</span>Robot</h1>
-								<img src="images/logo.png" id="logo">
 							</div>
 						</nav>
 						
@@ -73,7 +75,7 @@
 
 				<div class="scroll-menu">
 					<div class="wrapper">
-						<h2>Jay<span style="color: #d865b0">the</span>Robot</h2>
+						<h2 class="portfolio-nav"><a href="#">Jay<span style="color: #d865b0">the</span>Robot</h2></a>
 						<ul>
 							<li class="portfolio-nav"><a href="#">Portfolio</a></li>
 							<li class="about-nav"><a href="#">About</a></li>
@@ -95,17 +97,61 @@
 				<div class="grid">
 					<!-- <div class="grid-item"><img src="images/#.jpg"></div> -->
 					<div class="grid-sizer"></div>
-		  			<div class="grid-item"><img src="images/Machine-for-Worries.jpg"></div>
-		  			<div class="grid-item"><img src="images/AssortedSucculentCity.jpg"></div>
-		  			<div class="grid-item"><img src="images/MachineForTheCaffeinated.jpg"></div>
-		  			<div class="grid-item"><img src="images/Cloud-Tail-District.jpg"></div>
-		  			<div class="grid-item"><img src="images/Texas-etc.jpg"></div>
-		  			<div class="grid-item"><img src="images/Plastic-Boats.jpg"></div>
-		  			<div class="grid-item"><img src="images/Jumprope.jpg"></div>
-		  			<div class="grid-item"><img src="images/Paddleball.jpg"></div>
-		  			<div class="grid-item"><img src="images/Bubbles.jpg"></div>
-		  			<div class="grid-item"><img src="images/Skies.jpg"></div>
-		  			<div class="grid-item"><img src="images/Quick-Pose.jpg"></div>
+		  			<div class="grid-item">
+		  				<a href="images/Machine-for-Worries.jpg" data-lightbox="artwork" data-title="No Worries">
+		  					<img src="images/Machine-for-Worries.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/AssortedSucculentCity.jpg" data-lightbox="artwork" data-title="Assorted Succulent City">
+		  					<img src="images/AssortedSucculentCity.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/MachineForTheCaffeinated.jpg" data-lightbox="artwork" data-title="A Machine for the Caffeinated">
+		  					<img src="images/MachineForTheCaffeinated.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/Cloud-Tail-District.jpg" data-lightbox="artwork" data-title="Tail End District">
+		  					<img src="images/Cloud-Tail-District.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/Texas-etc.jpg" data-lightbox="artwork" data-title="Texas, Etc.">
+		  					<img src="images/Texas-etc.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/Plastic-Boats.jpg" data-lightbox="artwork" data-title="Plastic Boats">
+		  					<img src="images/Plastic-Boats.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/Jumprope.jpg" data-lightbox="artwork" data-title="Jumprope">
+		  					<img src="images/Jumprope.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/Paddleball.jpg" data-lightbox="artwork" data-title="Paddleball">
+		  					<img src="images/Paddleball.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/Bubbles.jpg" data-lightbox="artwork" data-title="Bubbles">
+		  					<img src="images/Bubbles.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/Skies.jpg" data-lightbox="artwork" data-title="The Skies are Mine">
+		  					<img src="images/Skies.jpg">
+		  				</a>
+		  			</div>
+		  			<div class="grid-item">
+		  				<a href="images/Quick-Pose.jpg" data-lightbox="artwork" data-title="Quick Pose for a Stranger">
+		  					<img src="images/Quick-Pose.jpg">
+		  				</a>
+		  			</div>
 		  		</div>
 		  	</section>
 				
@@ -206,13 +252,20 @@
 		
 		<footer>
 			<div class="wrapper">
-				<h6 id="copyright">Copyright: Jay Bramhall 2007-2019</h6>
+				<h6 id="copyright">Copyright: Jay Bramhall 2007-2020</h6>
 				<ul id="footer-nav">
-					<li class="portfolio-nav"><a href="#">Portfolio</a></li>
-					<li class="about-nav"><a href="#">About</a></li>
-					<li class="contact-nav"><a href="#">Contact</a></li>
-					<li><h6>|</h6></li>
-					<li><h6><a href="https://www.etsy.com/shop/JaytheRobot/">Store</a></h6></li>
+					<li class="portfolio-nav">
+						<h6><a href="#">Portfolio</a></h6>
+					</li>
+					<li class="about-nav">
+						<h6><a href="#">About</a></h6>
+					</li>
+					<li class="contact-nav">
+						<h6><a href="#">Contact</a></h6>
+					</li>
+					<li>
+						<h6><a href="https://www.etsy.com/shop/JaytheRobot/">Store</a></h6>
+					</li>
 				</ul>
 			</div>
 		</footer>

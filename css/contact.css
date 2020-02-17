@@ -17,7 +17,8 @@ $blue-darker: #333573;*/
 }
 #contact-section h1, #contact-section h3 {
   font-family: RobotoBlack, GillSans, sans-serif;
-  color: #555;
+  color: #d0d0d0;
+  letter-spacing: 1px;
 }
 #contact-section h3 {
   font-size: 18px;
@@ -26,7 +27,7 @@ $blue-darker: #333573;*/
 #contact-section p {
   font-family: RobotoLight, GillSans, sans-serif;
   font-size: 14px;
-  color: #555;
+  color: #d0d0d0;
 }
 #contact-section .email-wrapper {
   display: flex;
