@@ -23,7 +23,7 @@ $blue-darker: #333573;*/
 @media screen and (max-width: 600px) {
   .grid-sizer,
 .grid-item {
-    width: 49.5%;
+    width: 48.5%;
   }
 }
 
