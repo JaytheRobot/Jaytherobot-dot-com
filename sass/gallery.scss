@@ -3,11 +3,19 @@
 .grid {
 	width: 70%;
 	margin: 0 auto;
+
+	@media screen and (max-width: $break-mob) {
+		width: 95%;
+	}
 }
 
 .grid-sizer,
 .grid-item {
 	width: 33%;
+
+	@media screen and (max-width: $break-mob) {
+		width: 49.5%;
+	}
 }
 
 .grid-item {

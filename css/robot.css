@@ -14,18 +14,18 @@ $blue-darker: #2675d3;
 $blue-color: #4a4c99; 
 $blue-lighter: #6467cc; 
 $blue-darker: #333573;*/
-header #title {
-  max-width: 600px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+header #title #logo {
+  width: 520px;
+  margin-top: 15px;
+  flex-shrink: 0;
+  /*		@media screen and (max-width: $break-lg) {
+  			width: 200px;
+  		}*/
 }
-header #title h1 {
-  font-family: RobotoBlack, GillSans, sans-serif;
-  font-size: 40px;
-  margin-top: 89px;
-  margin-bottom: 0;
-  color: #e8935f;
+@media screen and (max-width: 600px) {
+  header #title #logo {
+    width: 300px;
+  }
 }
 header nav {
   width: 100%;
@@ -36,22 +36,8 @@ header nav {
 }
 @media screen and (max-width: 600px) {
   header nav {
+    flex-flow: row wrap;
     align-items: flex-start;
-  }
-}
-header nav #logo {
-  width: 200px;
-  margin-top: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-  flex-shrink: 0;
-  /*		@media screen and (max-width: $break-lg) {
-  			width: 200px;
-  		}*/
-}
-@media screen and (max-width: 600px) {
-  header nav #logo {
-    width: 150px;
   }
 }
 header nav ul {
@@ -64,9 +50,9 @@ header nav ul {
 @media screen and (max-width: 600px) {
   header nav ul {
     width: 100%;
-    padding: 10px 0;
+    margin: 0;
     justify-content: center;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     align-items: center;
   }
 }
@@ -97,7 +83,7 @@ header .navbar {
 }
 @media screen and (max-width: 600px) {
   header .navbar {
-    height: 145px;
+    height: 105px;
   }
   header .navbar .wrapper {
     width: 100%;
@@ -171,6 +157,11 @@ header .fixed {
   background-color: #e8935f;
   box-shadow: 0px 5px 10px #242226;
 }
+@media screen and (max-width: 600px) {
+  .minibar {
+    height: 3px;
+  }
+}
 
 /*$blue-color: #308fff;
 $blue-lighter: #7cb8ff;
@@ -184,10 +175,21 @@ $blue-darker: #333573;*/
   width: 70%;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .grid {
+    width: 95%;
+  }
+}
 
 .grid-sizer,
 .grid-item {
   width: 33%;
+}
+@media screen and (max-width: 600px) {
+  .grid-sizer,
+.grid-item {
+    width: 49.5%;
+  }
 }
 
 .grid-item {
@@ -383,6 +385,57 @@ $blue-darker: #333573;*/
   }
 }
 
+/*$blue-color: #308fff;
+$blue-lighter: #7cb8ff;
+$blue-darker: #2675d3;
+
+//Purple Scheme
+$blue-color: #4a4c99; 
+$blue-lighter: #6467cc; 
+$blue-darker: #333573;*/
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: #202020;
+  clear: both;
+}
+footer ul {
+  float: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 14px;
+  margin-bottom: 0;
+  width: 250px;
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  footer ul {
+    display: none;
+  }
+}
+footer h6 {
+  font-family: GillSans, sans-serif;
+  color: #a8a8a8;
+  font-weight: 400;
+  padding-bottom: 0;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  footer h6 {
+    margin-left: 10px;
+  }
+}
+footer a {
+  text-decoration: none;
+  color: #a8a8a8;
+}
+footer #copyright {
+  float: left;
+  margin-top: 14px;
+}
+
 @font-face {
   font-family: CaviarDreams;
   src: url(../fonts/CaviarDreams.ttf);
@@ -415,13 +468,12 @@ body {
 }
 
 .wrapper {
-  max-width: 70%;
+  max-width: 1200px;
   margin: 0 auto;
 }
-@media screen and (max-width: 70%) {
+@media screen and (max-width: 1200px) {
   .wrapper {
     width: 95%;
-    margin: 0;
   }
 }
 
@@ -470,49 +522,6 @@ body {
   content: "";
   display: block;
   height: 40px;
-}
-
-footer {
-  height: 40px;
-  width: 100%;
-  background-color: #202020;
-  clear: both;
-}
-footer ul {
-  float: right;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  list-style: none;
-  margin-top: 14px;
-  margin-bottom: 0;
-  width: 250px;
-  padding: 0;
-}
-@media screen and (max-width: 600px) {
-  footer ul {
-    display: none;
-  }
-}
-footer h6 {
-  font-family: GillSans, sans-serif;
-  color: #a8a8a8;
-  font-weight: 400;
-  padding-bottom: 0;
-  margin: 0;
-}
-@media screen and (max-width: 600px) {
-  footer h6 {
-    margin-left: 10px;
-  }
-}
-footer a {
-  text-decoration: none;
-  color: #a8a8a8;
-}
-footer #copyright {
-  float: left;
-  margin-top: 14px;
 }
 
 /*# sourceMappingURL=robot.css.map */

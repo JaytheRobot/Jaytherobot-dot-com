@@ -10,10 +10,21 @@ $blue-darker: #333573;*/
   width: 70%;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .grid {
+    width: 95%;
+  }
+}
 
 .grid-sizer,
 .grid-item {
   width: 33%;
+}
+@media screen and (max-width: 600px) {
+  .grid-sizer,
+.grid-item {
+    width: 49.5%;
+  }
 }
 
 .grid-item {

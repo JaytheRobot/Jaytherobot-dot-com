@@ -4,6 +4,7 @@
 @import 'gallery';
 @import 'about';
 @import 'contact';
+@import 'footer';
 
 @font-face {
 	font-family: CaviarDreams;
@@ -45,8 +46,7 @@ body {
 	margin: 0 auto;
 
 	@media screen and (max-width: $break-lg) { // For when page is smaller than max-width
-		width: 95%; 
-		margin: 0;
+		width: 95%;
 	}
 }
 
@@ -95,51 +95,6 @@ body {
 	content: "";
 	display: block;
 	height: 40px;
-}
-
-footer {
-	height: 40px;
-	width: 100%;
-	background-color: #202020;
-	clear: both;
-
-	ul {
-		float: right;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-		list-style: none;
-		margin-top: 14px;
-		margin-bottom: 0;
-		width: 250px;
-		padding: 0;
-
-		@media screen and (max-width: $break-mob) {
-			display: none;
-		}
-	}
-
-	h6 {
-		font-family: GillSans, sans-serif;
-		color: $footer-text;
-		font-weight: 400;
-		padding-bottom: 0;
-		margin: 0;
-
-		@media screen and (max-width: $break-mob) {
-			margin-left: 10px;
-		}
-	}
-
-	a {
-		text-decoration: none;
-		color: $footer-text;
-	}
-
-	#copyright {
-		float: left;
-		margin-top: 14px;
-	}
 }
 
 

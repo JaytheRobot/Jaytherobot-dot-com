@@ -10,20 +10,35 @@ header {
 	// }
 
 	#title {
-		max-width: 600px;
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
+		// max-width: 600px;
+		// display: flex;
+		// flex-flow: row nowrap;
+		// justify-content: space-between;
 
-		h1 {
-			font-family: $display-fonts;
-			font-size: 40px;
-			margin-top: 89px;
-			margin-bottom: 0;
-			color: $nav-grad2;
+		// h1 {
+		// 	font-family: $display-fonts;
+		// 	font-size: 40px;
+		// 	margin-top: 89px;
+		// 	margin-bottom: 0;
+		// 	color: $nav-grad2;
 
-			@media screen and (max-width: $break-sm) {
+		// 	@media screen and (max-width: $break-mob) {
+		// 		margin-top: 6vh;
+		// 		font-size: 8vw;
+		// 	}
+		// }
 
+		#logo {
+			width: 520px;
+			margin-top: 15px;
+			flex-shrink: 0;
+
+	/*		@media screen and (max-width: $break-lg) {
+				width: 200px;
+			}*/
+
+			@media screen and (max-width: $break-mob) {
+				width: 300px;
 			}
 		}
 	}
@@ -35,27 +50,10 @@ header {
 		justify-content: space-around;
 		align-items: flex-end;
 
-		@media screen and (max-width: $break-sm) {
+		@media screen and (max-width: $break-mob) {
+			flex-flow: row wrap;
 			align-items: flex-start;
 		}
-
-		#logo {
-			width: 200px;
-			margin-top: 15px;
-			margin-left: 20px;
-			margin-right: 20px;
-			flex-shrink: 0;
-
-	/*		@media screen and (max-width: $break-lg) {
-				width: 200px;
-			}*/
-
-			@media screen and (max-width: $break-sm) {
-				width: 150px;
-			}
-		}
-
-
 
 		ul {
 			display: flex;
@@ -66,14 +64,11 @@ header {
 			margin-bottom: 40px;
 			//width: 485px;
 
-				@media screen and (max-width: $break-sm) { 
-				//	background-color: $blue-color;
-				//	float: none;
+				@media screen and (max-width: $break-mob) { 
 					width: 100%;
-				//	margin: 0 auto;
-					padding: 10px 0;
+					margin: 0;
 					justify-content: center;
-					flex-flow: column nowrap;
+					flex-flow: row nowrap;
 					align-items: center;
 				}
 			}
@@ -84,7 +79,7 @@ header {
 			font-size: 18px;
 			color: $five-gray;
 
-			@media screen and (max-width: $break-sm) {
+			@media screen and (max-width: $break-mob) {
 				font-size: 18px;
 				margin: 10px 0;
 			}
@@ -109,8 +104,8 @@ header {
 		//background-image: linear-gradient($nav-grad1, $nav-grad2);
 		margin: 0;
 
-		@media screen and (max-width: $break-sm) {
-			height: 145px;
+		@media screen and (max-width: $break-mob) {
+			height: 105px;
 
 			.wrapper {
 				width: 100%;
@@ -120,7 +115,7 @@ header {
 	}
 
 	// #mobilebar {  // ---- Depreciated -----
-	// 	@media screen and (max-width: $break-sm) {
+	// 	@media screen and (max-width: $break-mob) {
 	// 		height: 68px;
 	// 		background-color: $blue-darker;
 	// 	}
@@ -146,7 +141,7 @@ header {
 			color: $nav-grad2;
 			float: left;
 
-			@media screen and (max-width: $break-sm) {
+			@media screen and (max-width: $break-mob) {
 				display: none;
 			}
 
@@ -165,7 +160,7 @@ header {
 			justify-content: center;
 			float: right;
 
-			@media screen and (max-width: $break-sm) {
+			@media screen and (max-width: $break-mob) {
 				float: none;
 			}
 		}
@@ -198,4 +193,8 @@ header {
 	height: 5px;
 	background-color: $nav-grad2;
 	box-shadow: 0px 5px 10px $nav-color;
+
+		@media screen and (max-width: $break-mob) {
+			height: 3px;
+		}
 }
