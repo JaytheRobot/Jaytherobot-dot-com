@@ -1,29 +1,29 @@
 // Common Colors
-
-//Blue Scheme
-$blue-color: #308fff;
-$blue-lighter: #7cb8ff;
-$blue-darker: #2675d3;
-
-//Purple Scheme
-/*$blue-color: #4a4c99; 
-$blue-lighter: #6467cc; 
-$blue-darker: #333573;*/
+$five-gray: #f0f0f0;
+$bg-color: #343439; //#eaf0f9;
+$desc-color: #7b7978;
+$footer-text: #a8a8a8;
+$nav-color: #242226;
 
 //Nav Gradient
 $nav-grad1: #d865b0;
 $nav-grad2: #e8935f;
 
-$five-gray: #f0f0f0;
-$bg-color: #eaf0f9;
-$desc-color: #7b7978;
-$footer-text: #a8a8a8;
-
 // Fonts
-$body-fonts: GillSans, sans-serif;
-$display-fonts: CaviarBold, GillSans, sans-serif;
+$body-fonts: RobotoLight, GillSans, sans-serif;
+$display-fonts: RobotoBlack, GillSans, sans-serif;
 
 // Media Break Points
 $break-mob: 600px;
 $break-sm: 600px;
-$break-lg: 1016px;
+$break-lg: 1200px;
+
+//Blue Scheme
+/*$blue-color: #308fff;
+$blue-lighter: #7cb8ff;
+$blue-darker: #2675d3;
+
+//Purple Scheme
+$blue-color: #4a4c99; 
+$blue-lighter: #6467cc; 
+$blue-darker: #333573;*/

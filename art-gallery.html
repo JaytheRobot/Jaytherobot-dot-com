@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+
+	<style type="text/css">
+		.grid {
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		.grid-sizer,
+		.grid-item {
+			width: 33%;
+		}
+
+		.grid-item {
+			float: left;
+			margin-bottom: 2px;
+		}
+
+		.grid-item--width2 {
+			width: 66%;
+		}
+
+		img {
+			width: 100%;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<section class="header">
+		
+	</section>
+	<section class="art-gallery">
+		<div class="grid">
+			<!-- <div class="grid-item"><img src="images/#.jpg"></div> -->
+			<div class="grid-sizer"></div>
+  			<div class="grid-item"><img src="images/Machine-for-Worries.jpg"></div>
+  			<div class="grid-item"><img src="images/AssortedSucculentCity.jpg"></div>
+  			<div class="grid-item"><img src="images/MachineForTheCaffeinated.jpg"></div>
+  			<div class="grid-item"><img src="images/Cloud-Tail-District.jpg"></div>
+  			<div class="grid-item"><img src="images/Texas-etc.jpg"></div>
+  			<div class="grid-item"><img src="images/Plastic-Boats.jpg"></div>
+  			<div class="grid-item"><img src="images/Jumprope.jpg"></div>
+  			<div class="grid-item"><img src="images/Paddleball.jpg"></div>
+  			<div class="grid-item"><img src="images/Bubbles.jpg"></div>
+  			<div class="grid-item"><img src="images/Skies.jpg"></div>
+  			<div class="grid-item"><img src="images/Quick-Pose.jpg"></div>
+  		</div>
+	</section>
+
+	<script type="text/javascript">
+		var $grid = $('.grid').masonry({
+
+			  // options
+			  itemSelector: '.grid-item',
+			  columnWidth: '.grid-sizer',
+			  percentPosition: true,
+			  gutter: 5
+		});
+
+
+		$grid.imagesLoaded().progress(function() {
+			$grid.masonry('layout');
+		});
+	</script>
+
+
+</body>
+</html>

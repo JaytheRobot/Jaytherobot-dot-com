@@ -1,0 +1,36 @@
+@import 'helpers/variables';
+
+.grid {
+	width: 70%;
+	margin: 0 auto;
+
+	@media screen and (max-width: $break-mob) {
+		width: 95%;
+	}
+}
+
+.grid-sizer,
+.grid-item {
+	width: 33%;
+
+	@media screen and (max-width: $break-mob) {
+		width: 48.5%;
+	}
+}
+
+.grid-item {
+	float: left;
+	margin-bottom: 2px;
+		
+		img {
+		width: 100%;
+	}
+}
+
+.grid-item--width2 {
+	width: 66%;
+}
+
+.gal-wrapper {
+	margin: 75px 0;
+}
