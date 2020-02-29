@@ -1,7 +1,7 @@
 @import 'helpers/variables';
 
 .grid {
-	width: 70%;
+	//width: 70%;
 	margin: 0 auto;
 
 	@media screen and (max-width: $break-mob) {
@@ -32,5 +32,6 @@
 }
 
 .gal-wrapper {
-	margin: 75px 0;
+	width: 70%;
+	margin: 75px 15%;
 }

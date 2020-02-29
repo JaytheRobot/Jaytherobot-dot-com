@@ -7,7 +7,6 @@ $blue-color: #4a4c99;
 $blue-lighter: #6467cc; 
 $blue-darker: #333573;*/
 .grid {
-  width: 70%;
   margin: 0 auto;
 }
 @media screen and (max-width: 600px) {
@@ -40,7 +39,8 @@ $blue-darker: #333573;*/
 }
 
 .gal-wrapper {
-  margin: 75px 0;
+  width: 70%;
+  margin: 75px 15%;
 }
 
 /*# sourceMappingURL=gallery.css.map */
